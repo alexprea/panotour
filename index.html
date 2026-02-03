@@ -1,36 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Panotour</title>
+  <title>Panotour Example</title>
   <meta charset="utf-8">
   <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
 
   <style>
-    html, body {
+    @-ms-viewport { width: device-width; }
+
+    html, body, #pano {
+      width: 100%;
+      height: 100%;
       margin: 0;
       padding: 0;
-      width: 100%;
-      height: 100%;
       overflow: hidden;
-      background: #000;
     }
 
-    #pano {
-      width: 100%;
-      height: 100%;
+    /* HIDE UI — keep DOM intact so JS doesn't break */
+    #sceneList,
+    #sceneListToggle,
+    #titleBar,
+    #autorotateToggle,
+    #fullscreenToggle,
+    .viewControlButton {
+      display: none !important;
     }
   </style>
 
   <link rel="stylesheet" href="vendor/reset.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="multiple-scenes">
 
-  <!-- PANORAMA ONLY -->
   <div id="pano"></div>
 
-  <!-- MARZIPANO -->
+  <div id="sceneList">
+    <ul class="scenes">
+      <a href="javascript:void(0)" class="scene" data-id="0-building-reception"><li class="text">Building Reception</li></a>
+      <a href="javascript:void(0)" class="scene" data-id="1-open-plan-layout"><li class="text">Open Plan Layout</li></a>
+      <a href="javascript:void(0)" class="scene" data-id="2-open-plan-creative-layout"><li class="text">Open Plan Creative Layout</li></a>
+      <a href="javascript:void(0)" class="scene" data-id="3-cellular-layout"><li class="text">Cellular Layout</li></a>
+      <a href="javascript:void(0)" class="scene" data-id="4-cat-a"><li class="text">Cat A</li></a>
+    </ul>
+  </div>
+
+  <div id="titleBar">
+    <h1 class="sceneName"></h1>
+  </div>
+
+  <a href="javascript:void(0)" id="autorotateToggle"></a>
+  <a href="javascript:void(0)" id="fullscreenToggle"></a>
+  <a href="javascript:void(0)" id="sceneListToggle"></a>
+
+  <a href="javascript:void(0)" id="viewUp" class="viewControlButton"></a>
+  <a href="javascript:void(0)" id="viewDown" class="viewControlButton"></a>
+  <a href="javascript:void(0)" id="viewLeft" class="viewControlButton"></a>
+  <a href="javascript:void(0)" id="viewRight" class="viewControlButton"></a>
+  <a href="javascript:void(0)" id="viewIn" class="viewControlButton"></a>
+  <a href="javascript:void(0)" id="viewOut" class="viewControlButton"></a>
+
   <script src="vendor/screenfull.min.js"></script>
   <script src="vendor/bowser.min.js"></script>
   <script src="vendor/marzipano.js"></script>
