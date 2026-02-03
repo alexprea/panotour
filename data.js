@@ -1,8 +1,8 @@
 var APP_DATA = {
   "scenes": [
     {
-      "id": "0-tea-auction---reception_1",
-      "name": "Tea Auction - Reception_1",
+      "id": "0-building-reception",
+      "name": "Building Reception",
       "levels": [
         {
           "tileSize": 256,
@@ -37,14 +37,14 @@ var APP_DATA = {
           "yaw": 1.6230968966536494,
           "pitch": 0.08831493461786799,
           "rotation": 0,
-          "target": "1-tea-auction---open-plan_1"
+          "target": "1-open-plan-layout"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "1-tea-auction---open-plan_1",
-      "name": "Tea Auction - Open Plan_1",
+      "id": "1-open-plan-layout",
+      "name": "Open Plan Layout",
       "levels": [
         {
           "tileSize": 256,
@@ -79,20 +79,20 @@ var APP_DATA = {
           "yaw": -2.89575247161458,
           "pitch": 0.005185035743238586,
           "rotation": 6.283185307179586,
-          "target": "0-tea-auction---reception_1"
+          "target": "0-building-reception"
         },
         {
           "yaw": -0.3207042402985856,
           "pitch": 0.21229525246076086,
           "rotation": 0,
-          "target": "2-tea-auction---open-plan-creative_1"
+          "target": "2-open-plan-creative-layout"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "2-tea-auction---open-plan-creative_1",
-      "name": "Tea Auction - Open Plan Creative_1",
+      "id": "2-open-plan-creative-layout",
+      "name": "Open Plan Creative Layout",
       "levels": [
         {
           "tileSize": 256,
@@ -127,20 +127,20 @@ var APP_DATA = {
           "yaw": -0.3344104826258061,
           "pitch": 0.15737202232388725,
           "rotation": 0,
-          "target": "3-tea-auction---cellular_1"
+          "target": "3-cellular-layout"
         },
         {
           "yaw": -2.8920569696368226,
           "pitch": 0.02754693417575993,
           "rotation": 0,
-          "target": "0-tea-auction---reception_1"
+          "target": "0-building-reception"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "3-tea-auction---cellular_1",
-      "name": "Tea Auction - Cellular_1",
+      "id": "3-cellular-layout",
+      "name": "Cellular Layout",
       "levels": [
         {
           "tileSize": 256,
@@ -175,20 +175,20 @@ var APP_DATA = {
           "yaw": -0.35055793390899836,
           "pitch": 0.03358568143044138,
           "rotation": 0,
-          "target": "4-tea-auction---1---cat-a_1"
+          "target": "4-cat-a"
         },
         {
           "yaw": -2.898903267175953,
           "pitch": 0.018995405604211868,
           "rotation": 0,
-          "target": "0-tea-auction---reception_1"
+          "target": "0-building-reception"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "4-tea-auction---1---cat-a_1",
-      "name": "Tea Auction - 1 - Cat A_1",
+      "id": "4-cat-a",
+      "name": "Cat A",
       "levels": [
         {
           "tileSize": 256,
@@ -223,13 +223,13 @@ var APP_DATA = {
           "yaw": -0.31932526297069685,
           "pitch": 0.04159186859309649,
           "rotation": 0,
-          "target": "1-tea-auction---open-plan_1"
+          "target": "1-open-plan-layout"
         },
         {
           "yaw": -2.8765857585084866,
           "pitch": 0.02654010113349692,
           "rotation": 0,
-          "target": "0-tea-auction---reception_1"
+          "target": "0-building-reception"
         }
       ],
       "infoHotspots": []
